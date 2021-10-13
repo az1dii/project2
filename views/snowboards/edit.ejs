@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %>
+    <body>
+        <%- include("../partials/header.ejs") %>
+        <main>
+            <div>
+                <form action="/snowboards/<%= snowboard._id %>?_method=PUT" method="post">
+                    <fieldset>
+                        <legend>Edit a <%= snowboard.name %></legend>
+                        <label>
+                            Year:<input
+                            type="text"
+                            name="year"
+                            value="<%= snowboard.year %>"
+                            placeholder="enter year"/>
+                        </label>
+                        <label>
+                            Brand:<input
+                            type="text"
+                            name="brand"
+                            value="<%= snowboard.brand %>"
+                            placeholder="enter snowboard brand"/>
+                        </label>
+                        <label>
+                            Name:<input
+                            type="text"
+                            name="name"
+                            value="<%= snowboard.name %>"
+                            placeholder="enter snowboard name"/>
+                        </label>
+                        <label>
+                            Profile:<input
+                            type="text"
+                            name="profile"
+                            value="<%= snowboard.profile %>"
+                            placeholder="enter snowboard profile"/>
+                        </label>
+                        <label>
+                            Terrain:<input
+                            type="text"
+                            name="terrain"
+                            value="<%= snowboard.terrain %>"
+                            placeholder="Good for"/>
+                        </label>
+                        <label>
+                            Size:<input
+                            type="text"
+                            name="size"
+                            value="<%= snowboard.size %>"
+                            placeholder="enter snowboard size(cm)"/>
+                        </label>
+                        <label>
+                            Flex:<input
+                            type="text"
+                            name="flex"
+                            value="<%= snowboard.flex %>"
+                            placeholder="enter snowboard flex rating"/>
+                        </label>
+                        <label>
+                            DAMAGED:<input type="checkbox" name="damaged" <%=
+                            snowboard.damaged ? "checked" : "" %> />
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Update <%= snowboard.name %>" />
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

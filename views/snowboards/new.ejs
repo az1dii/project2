@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+      <div>
+        <form action="/snowboards" method="post">
+          <fieldset>
+            <legend>Add a New Snowboard</legend>
+            <label>
+                Year:
+                <input type="text" name="year" placeholder="enter the year" />
+            </label>
+            <label>
+                Brand:
+                <input type="text" name="brand" placeholder="enter the brand" />
+            </label>
+            <label>
+                Name:
+                <input type="text" name="name" placeholder="enter the name" />
+          </label>
+            <label>
+              Damaged:
+              <input type="checkbox" name="damaged" />
+            </label>
+            <input type="submit" value="ADD" />
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+
+        <article>
+          <h2><%= snowboard.year %> - <%= snowboard.brand %> -<%= snowboard.name %></h2>
+          <h2><%= snowboard.damaged ? "Damaged" : "Not Damaged" %></h2>
+          <h5><%= snowboard.profile %></h5>
+          <h5><%= snowboard.terrain %></h5>
+          <h5><%= snowboard.size %></h5>
+          <h5><%= snowboard.flex %></h5>
+
+          <a href="/snowboards/<%= snowboard._id %>/edit"><button>Edit</button></a>
+          <form action="/snowboards/<%= snowboard._id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete"/>
+          </form>
+          <a href="/snowboards/"><button>Back to Main</button></a>
+        </article>
+
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div class ="main">
+        <a href="/snowboards/new"><button>Add a Snowboard</button></a>
+        <a href="/user/logout"><button>Logout</button></a>
+        <% for (snowboard of snowboards) { %>
+
+        <article>
+          <a href="/snowboards/<%= snowboard._id %>">
+            <h2>
+              <h2><%= snowboard.year %> - <%= snowboard.brand %> - <%= snowboard.name %> - <%= snowboard.damaged ? "Damaged" : "Not Damaged" %></h2>
+          </a>
+        </article>
+
+        <% } %>
+      </div>
+    </main>
+  </body>
+</html>
