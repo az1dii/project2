@@ -13,6 +13,7 @@ https://snowboard2.herokuapp.com/
 * Node.js
 * EJS
 * MongoDB
+* Mongoose
 
 
 
