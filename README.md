@@ -2,7 +2,7 @@
 An application to keep track of your snowboard collection.
 
 ## Link to App
-
+https://snowboard2.herokuapp.com/
 
 
 ## Technologies Used
@@ -17,7 +17,7 @@ An application to keep track of your snowboard collection.
 
 
 ## Wiresframs and ERD
-
+https://trello.com/b/0sxh0J1p/project-2
 
 
 
@@ -25,3 +25,5 @@ An application to keep track of your snowboard collection.
 
 
 ## Implementing 
+* Imgs
+* Styling
