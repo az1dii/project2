@@ -19,11 +19,12 @@ https://snowboard2.herokuapp.com/
 
 ## Wiresframs and ERD
 https://trello.com/b/0sxh0J1p/project-2
-![Screen Shot 2021-10-13 at 7 41 48 PM](https://user-images.githubusercontent.com/87721221/137227710-f456ecc6-ca29-41e5-aac9-5734f195d048.png)
+
 
 
 
 ## Screenshot
+![Screen Shot 2021-10-13 at 7 41 48 PM](https://user-images.githubusercontent.com/87721221/137227729-b0995d38-c000-4157-899c-d6f53f6008e5.png)
 
 
 
