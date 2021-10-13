@@ -85,7 +85,6 @@ router.delete("/:id", (req, res) => {
 router.get("/:id", (req, res) => {
     // grab the id from params
     const id = req.params.id
-
     Snowboard.findById(id, (err, snowboard) => {
         //render the template
         res.render("snowboards/show.ejs", {snowboard})

@@ -54,6 +54,7 @@ router.post("/login", (req, res) => {
       }
     }
   });
+  console.log(req.session.username)
 });
 
 // logout route

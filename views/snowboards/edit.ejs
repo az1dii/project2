@@ -4,7 +4,7 @@
     <body>
         <%- include("../partials/header.ejs") %>
         <main>
-            <div>
+            <div class = container1>
                 <form action="/snowboards/<%= snowboard._id %>?_method=PUT" method="post">
                     <fieldset>
                         <legend>Edit a <%= snowboard.name %></legend>
@@ -29,6 +29,7 @@
                             value="<%= snowboard.name %>"
                             placeholder="enter snowboard name"/>
                         </label>
+                        <div class = containter2>
                         <label>
                             Profile:<input
                             type="text"
@@ -57,6 +58,7 @@
                             value="<%= snowboard.flex %>"
                             placeholder="enter snowboard flex rating"/>
                         </label>
+                        </div>
                         <label>
                             DAMAGED:<input type="checkbox" name="damaged" <%=
                             snowboard.damaged ? "checked" : "" %> />

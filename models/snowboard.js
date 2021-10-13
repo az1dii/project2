@@ -8,12 +8,13 @@ const mongoose = require("./connection")
 const {Schema, model} = mongoose
 
 const snowboardSchema = new Schema({
+    username: String,
     name: String,
     profile: String,
     damaged: Boolean,
     terrain: String,
     size: Number,
-    flex: Number,
+    flex: String,
     year: Number,
     brand: String,
 })
