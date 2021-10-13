@@ -4,21 +4,24 @@
 
   <body>
     <%- include("../partials/header.ejs") %>
-    <main>
-      <div>
-        <article class = show>
-          <h2><%= snowboard.year %> - <%= snowboard.brand %> - <%= snowboard.name %></h2>
-          <p><strong>Profile:</strong> - <%= snowboard.profile %> - <%= snowboard.terrain %></p>
-          <p><strong>Size:</strong> - <%= snowboard.size %></p>
-          <p><strong>Flex:</strong> - <%= snowboard.flex %></p>
-          <p><strong>Board Status:</strong> - <%= snowboard.damaged ? "Damaged" : "Not Damaged" %></p>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= snowboard.year %> - <%= snowboard.brand %> - <%= snowboard.name %>5
+          <p class="card-text"><%= snowboard.profile %> - <%= snowboard.terrain %></p>
+          <p class="card-text"><%= snowboard.size %></p>
+          <p class="card-text"><%= snowboard.flex %></p>
+          <p class="card-text"></p><%= snowboard.damaged ? "Damaged" : "Not Damaged" %></p>
+        </div>
+      </div>
+    </div>
+
+
           <a href="/snowboards/<%= snowboard._id %>/edit"><button>Edit</button></a>
           <form action="/snowboards/<%= snowboard._id %>?_method=DELETE" method="POST">
             <input type="submit" value="Delete"/>
           </form>
           <a href="/snowboards/"><button>Back to Main</button></a>
-        </article>
-      </div>
-    </main>
   </body>
 </html>

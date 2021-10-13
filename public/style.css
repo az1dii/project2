@@ -4,12 +4,11 @@
     padding: 10px;
 }
 
-.show {
-    width:300px;
-    height:350px;
-    background-color: white;
-    border-radius: 25px;
-    padding: 10px;
-    margin-left: -50px;
+.container {
+    display: grid;
+    margin: auto;
+    margin-left: 10%;
+    display: flex;
+    padding-left: 20%;
 }
 
